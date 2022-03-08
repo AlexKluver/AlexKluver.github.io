@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Vidi</title>
+		<title>Vidi Home</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -22,7 +22,7 @@
 
 							<!-- Logo -->
 								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Vidi</span>
 								</a>
 
 							<!-- Nav -->
@@ -53,7 +53,7 @@
 								<p>Allowing creators to follow their dreams and make the best content they can</p>
 							</header>
 							<section class="tiles">
-								<article class="style1">
+								<article class="style3">
 									<span class="image">
 										<img src="images/pic01.jpg" alt="" />
 									</span>
@@ -73,18 +73,22 @@
 						<div class="inner">
 							<section>
 								<h2>Get in touch</h2>
-								<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xknybylb" method="post">
-									<fieldset id="fs-frm-inputs">
-									  <label for="full-name">Full Name</label>
-									  <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
-									  <label for="email-address">Email Address</label>
-									  <input type="email" name="_replyto" id="email-address" placeholder="your-email@email.com" required="">
-									  <label for="message">Message</label>
-									  <textarea rows="5" name="message" id="message" placeholder="Additional information" required=""></textarea>
-									  <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-									</fieldset>
-									<input type="submit" value="Submit">
-								  </form>
+								<form method="post" action="https://formspree.io/f/xknybylb">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
 							</section>
 							<section>
 								<h2>Follow</h2>
