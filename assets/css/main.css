@@ -202,8 +202,10 @@ input, select, textarea {
 		text-transform: uppercase;
 		letter-spacing: 0.35em;
 	}
-
-		h2 a, h3 a, h4 a, h5 a, h6 a {
+		h2 a{
+			color: #252525;
+		}
+		h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
 		}
 
@@ -1856,7 +1858,7 @@ input, select, textarea {
 			}
 
 			.icon.style2:hover {
-				color: #f1f1f1;
+				color: #161415;
 				border-color: #161415;
 			}
 
