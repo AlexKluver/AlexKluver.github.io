@@ -24,26 +24,31 @@ h2, h3, h4, h5, p {
 }
 
 img {
-    height: 100vh
+    height: 93vh;
 }
 
 .cols {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 3rem;
+    padding: 1rem 10rem 0rem 1rem;
+    text-align: center;
 }
 
-.lcol {
-    flex: 55%;
-    display: inline-block;
+.col {
+    /* background-color: red; */
+
 }
 
-.rcol {
-    flex: 45%;
+form {
+    height: 180px;
 }
 
 .footer {
     text-align: center;
-    width: 30%;
-    transform: translate(110%, 0%);
+    width: 500px;
+    margin: auto;
+    /* background-color: red; */
 }
 
 .centerify {
@@ -52,9 +57,19 @@ img {
     left: 100%;
     width: 70%;
     height: 50%;
-    transform: translate(25%, 25%);
+    transform: translate(25%, 10vh);
 }
 
 li {
-    transform: translate(12vw, 0%);
+    /* transform: translate(12vw, 0%); */
+}
+
+@media only screen and (max-width: 75rem) {
+    .cols {
+        grid-template-columns: 1fr;
+    }
+
+    .centerify {
+        transform: translate(25%, 0%);
+    }
 }
