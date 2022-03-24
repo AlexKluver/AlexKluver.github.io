@@ -66,6 +66,9 @@ input[type="text"], input[type="email"] {
     font-size: 1rem;
     min-height: 2rem;
 }
+input[type="text"]:focus, input[type="email"]:focus{
+    border-bottom: solid 1px #e4ff83;
+}
 
 input[type="submit"] {
     -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -86,11 +89,39 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #e4ff83;
 }
-input[type="radio"] {
+
+input[type="radio"]{
+    display: none;
+}
+input[type="radio"]:checked+label{
+    border-color: #e4ff83;
+    color: #e4ff83;
+}
+input[type="radio"]:hover+label{
+    border-color: white;
     color: white;
-    background-color: red;
-    height: 10rem;
-    width: 10rem;
+}
+li {
+    display: inline-block;
+    margin-right: 15px;
+}
+label {
+    -moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    -webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    -ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+    cursor: pointer;
+    display: inline-block;
+    color: white;
+    padding: 10px 20px;
+    line-height: 1rem;
+    border: 1px;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 4px;
+    font-size: .8rem;
+    width: 8rem;
 }
 
 .footer {

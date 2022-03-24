@@ -28,21 +28,24 @@
 			<h3>Sign up for our mailing list</h3>
 			<form method="post" action="https://formspree.io/f/xknybylb">
 				<div class="fields">
-					<div class="field half">
+					<div>
 						<input type="text" name="name" id="name" placeholder="Name" />
 					</div>
-					<div class="field half">
+					<div>
 						<input type="email" name="email" id="email" placeholder="Email" />
 					</div>
-					<div>
-						<input type="radio" id="huey" name="drone" value="huey" checked>
-						<label for="huey">Huey</label>
-					</div>
-					  
-					<div>
-						<input type="radio" id="dewey" name="drone" value="dewey">
-						<label for="dewey">Dewey</label>
-					</div>
+					
+					<ul>
+						<li>
+							<input type="radio" id="creator" name="drone" value="creator" checked>
+							<label for="creator">I'm a creator</label>
+						</li>
+						<li>
+							<input type="radio" id="investor" name="drone" value="investor">
+							<label for="investor">I'm an investor</label>
+						</li>
+					</ul>
+					
 					
 				</div>
 				<ul class="actions">
